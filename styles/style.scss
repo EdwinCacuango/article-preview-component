@@ -1,2 +1,40 @@
 @import "variables";
 @import "globals";
+
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-component{
+    max-width: 20.4375rem;
+    background-color: white;
+}
+
+
+.hero{
+    max-width: inherit; 
+}
+
+.description{
+    margin: 1.5rem 2.1093rem;
+}
+
+.image-profile{
+    max-width: 2.5rem;
+    img{
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+@import "shared";
