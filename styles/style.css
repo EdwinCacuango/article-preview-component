@@ -138,6 +138,10 @@ img {
   display: none;
 }
 
+.active {
+  background-color: #48556a;
+}
+
 .active .author-description {
   display: none;
 }
