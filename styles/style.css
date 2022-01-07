@@ -139,6 +139,7 @@ img {
 }
 
 .active {
+  height: 3.4560rem;
   background-color: #48556a;
 }
 
