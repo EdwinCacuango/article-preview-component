@@ -1,0 +1,32 @@
+
+// Active
+
+// By default
+.shared-information{
+    display: none;
+}
+
+.active{
+    // .author{
+    //     background-color:$primary;
+    // }
+    .author-description{
+        display:none;
+    }
+    .shared-information{
+        width: 10.9375rem;
+        @include flexCenter($horizontal:space-around);
+        p{
+           text-transform: uppercase; 
+        }
+        .icon{
+            width: 1.25rem;
+        }
+    }
+    .share{
+    background-color: $secondary;
+    svg path{
+        fill:white;
+    }
+    }
+}

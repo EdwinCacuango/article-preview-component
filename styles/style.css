@@ -15,7 +15,8 @@ body {
   font-size: 0.8125rem;
   line-height: 1.5;
   background-color: #ecf2f8;
-  min-height: 100vh;
+  color: #9eafc2;
+  font-weight: 500;
 }
 
 main {
@@ -28,7 +29,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 90%;
+  min-height: 100vh;
 }
 
 img {
@@ -50,6 +51,10 @@ img {
 .card-component {
   max-width: 20.4375rem;
   background-color: white;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .hero {
@@ -60,11 +65,108 @@ img {
   margin: 1.5rem 2.1093rem;
 }
 
-.image-profile {
+.description h2 {
+  color: #48556a;
+  font-size: 1rem;
+}
+
+.author {
+  padding: 0 2.1093rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.author .author-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.author .author-description .image-profile {
   max-width: 2.5rem;
 }
 
-.image-profile img {
+.author .author-description .image-profile img {
   border-radius: 50%;
+}
+
+.author .author-description .author-information {
+  margin-left: 1rem;
+}
+
+.author .author-description .author-information h3 {
+  margin: 0;
+  color: #48556a;
+}
+
+.author .author-description .author-information p {
+  margin-top: 0;
+}
+
+.author .share {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.author .share img {
+  width: 50%;
+}
+
+.atribution {
+  text-align: center;
+}
+
+.shared-information {
+  display: none;
+}
+
+.active .author-description {
+  display: none;
+}
+
+.active .shared-information {
+  width: 10.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.active .shared-information p {
+  text-transform: uppercase;
+}
+
+.active .shared-information .icon {
+  width: 1.25rem;
+}
+
+.active .share {
+  background-color: #6d7f97;
+}
+
+.active .share svg path {
+  fill: white;
 }
 /*# sourceMappingURL=style.css.map */
