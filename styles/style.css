@@ -174,4 +174,52 @@ img {
 .active .share svg path {
   fill: white;
 }
+
+@media (min-width: 48rem) {
+  .active {
+    background-color: initial;
+  }
+  .active .author-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .active .shared-information {
+    background-color: #48556a;
+    width: 15.5rem;
+    position: absolute;
+    top: 50%;
+    left: 63.25%;
+    border-radius: 8px;
+  }
+  .active .shared-information::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 0.6875rem  solid transparent;
+    border-top: 0.6875rem solid #48556a;
+    border-right: 0.6875rem solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .card-component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 45.625rem;
+  }
+  .card-component .hero {
+    line-height: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

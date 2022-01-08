@@ -1,0 +1,9 @@
+@media (min-width:48rem) {
+    .card-component{
+        @include flexCenter();
+        max-width: 45.625rem;
+    .hero{
+        line-height: 0;
+    }
+    }
+}
