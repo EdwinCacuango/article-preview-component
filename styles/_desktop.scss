@@ -2,8 +2,14 @@
     .card-component{
         @include flexCenter();
         max-width: 45.625rem;
-    .hero{
+        max-height: 17.5rem;
+    .hero {
+        width: 17.875rem;
         line-height: 0;
+        img{
+            width: 17.875rem;
+        }
+        
     }
     }
 }
