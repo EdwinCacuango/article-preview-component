@@ -1,15 +1,20 @@
-@media (min-width:48rem) {
-    .card-component{
-        @include flexCenter();
-        max-width: 45.625rem;
-        max-height: 17.5rem;
+@media (min-width: 48rem) {
+  .card-component {
+    @include flexCenter();
+    max-width: 45.625rem;
+    height: 17.5rem;
     .hero {
-        width: 17.875rem;
-        line-height: 0;
-        img{
-            width: 17.875rem;
-        }
-        
+      max-width: 17.875rem;
+      height: 17.5rem;
+      line-height: 0;
+      
+      img {
+        min-height: 100%;
+        object-fit: cover;
+      }
     }
+    .description h1 {
+      font-size: 1.5rem;
     }
+  }
 }
